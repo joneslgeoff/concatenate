@@ -16,12 +16,11 @@ def mergeMovieLists():
 
 
 def checkSorted(seq):
-  # TODO: implement me
-  # if empty list, then return True
-  # else: return False
-  
-  if len(seq) == 0:
+  if len(seq) <= 1:
     return True
+  else:
+    return False
+    #knock out the other list boys
 
 def expectSorted(seq, shouldBeSorted):
   print('  expecting that', seq, 'is sorted?', shouldBeSorted)
@@ -31,6 +30,6 @@ def expectSorted(seq, shouldBeSorted):
 
 print('\nChecking sort() function ...')
 expectSorted([], True)
-#expectSorted([ 'aa' ], True)
+expectSorted([ 'aa' ], True)
 #expectSorted([ 'aa', 'bb' ], True)
 #expectSorted([ 'bb', 'aa' ], False)
